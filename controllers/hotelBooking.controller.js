@@ -5,7 +5,12 @@ const usersData = require('../models/usersData');
 module.exports = {
     getHotelsList: asyncMiddleware(async (req, res, next) => {
         const hotelList = await hotels.find();
-        return res.send({ hotelList: hotelList });
+        if(hotelList){
+            return res.send({ hotelList: hotelList });
+        }else{
+            return res.send({message:"No Users to display"});
+        }
+        
     }),
     bookRooms: asyncMiddleware(async (req, res, next) => {
         const user = await usersData.findOne({ emailId: req.body.emailId });

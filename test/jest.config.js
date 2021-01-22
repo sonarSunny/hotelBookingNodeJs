@@ -1,11 +1,11 @@
 /**
  * @description: Jest config file.
  */
-
+    
 module.exports = {
     globalSetup: './setup.js',
     globalTeardown: './teardown.js',
-    testEnvironment: './puppeteer_environment.js',
+    testEnvironment: 'node',
     preset: "jest-puppeteer",
     // globals: {
     //     URL: "http://localhost:8080"
