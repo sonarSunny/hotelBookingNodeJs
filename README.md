@@ -67,3 +67,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
 
     $ npm start
+   
+## Post-Man SetUp
+
+  - If not installed install postman app 
+  - click on import
+  - click on link
+  - add this link https://www.postman.com/collections/3af7168f6a93e5aef3ae and click on continue.
+ 
